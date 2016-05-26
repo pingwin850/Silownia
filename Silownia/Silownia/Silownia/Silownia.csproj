@@ -84,6 +84,21 @@
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel-WPF">
+      <HintPath>PDFSharp\MigraDoc\samples\Samples C#\Based on WPF\MixMigraDocAndPdfSharp\bin\Debug\MigraDoc.DocumentObjectModel-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering-WPF">
+      <HintPath>PDFSharp\MigraDoc\samples\Samples C#\Based on WPF\MixMigraDocAndPdfSharp\bin\Debug\MigraDoc.Rendering-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering-WPF">
+      <HintPath>PDFSharp\MigraDoc\samples\Samples C#\Based on WPF\MixMigraDocAndPdfSharp\bin\Debug\MigraDoc.RtfRendering-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp-WPF">
+      <HintPath>PDFSharp\MigraDoc\samples\Samples C#\Based on WPF\MixMigraDocAndPdfSharp\bin\Debug\PdfSharp-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting-WPF">
+      <HintPath>PDFSharp\MigraDoc\samples\Samples C#\Based on WPF\MixMigraDocAndPdfSharp\bin\Debug\PdfSharp.Charting-WPF.dll</HintPath>
+    </Reference>
     <Reference Include="System.IO, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.1.1.8\lib\net40\System.IO.dll</HintPath>
       <Private>True</Private>

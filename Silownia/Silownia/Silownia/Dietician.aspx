@@ -70,11 +70,11 @@
                 <td class="auto-style16">&nbsp;</td>
                 <td><strong>
     
-        <asp:Label ID="LabelWelcome" runat="server" Text="Witaj " CssClass="auto-style2"></asp:Label>
+        <asp:Label ID="LabelWelcome" runat="server" Text="Witaj " CssClass="auto-style2" ForeColor="#3333FF"></asp:Label>
                     </strong>
                     <br />
                     <br />
-        <asp:Button ID="B_logout" runat="server" OnClick="B_logout_Click" Text="Wyloguj" CssClass="auto-style3" />
+        <asp:Button ID="B_logout" runat="server" OnClick="B_logout_Click" Text="Wyloguj" CssClass="auto-style3" BackColor="#FFFFCC" />
     
                 </td>
                 <td>&nbsp;</td>

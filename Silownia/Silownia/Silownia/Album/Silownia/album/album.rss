@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Silownia</title>
+   	<link>.</link>
+        <generator>jAlbum 13.2</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>album2</title>
+            <link>slides/album2.jpg</link>
+            <pubDate>Mon, 23 May 2016 23:33:28 +0200</pubDate>
+            <description>Strefa wolnych ciężarów</description>
+            <media:description type="html">Strefa wolnych ciężarów</media:description>
+            <media:thumbnail url="thumbs/album2.jpg" width="124" height="93"/>
+            <media:content type="image/jpeg" url="slides/album2.jpg" width="1024" height="768"/>
+            <jalbum:exif originalDate="Thu, 27 Sep 2007 15:19:02 +0200" cameraMake="KONICA MINOLTA" cameraModel="DiMAGE Z20"/>
+            <guid isPermaLink="false">slides/album2.jpg</guid>
+        </item>
+        <item>
+            <title>album3</title>
+            <link>slides/album3.jpg</link>
+            <pubDate>Mon, 23 May 2016 23:33:28 +0200</pubDate>
+            <description>Strefa fight</description>
+            <media:description type="html">Strefa fight</media:description>
+            <media:thumbnail url="thumbs/album3.jpg" width="124" height="70"/>
+            <media:content type="image/jpeg" url="slides/album3.jpg" width="1280" height="720"/>
+            <guid isPermaLink="false">slides/album3.jpg</guid>
+        </item>
+        <item>
+            <title>album4</title>
+            <link>slides/album4.jpg</link>
+            <pubDate>Mon, 23 May 2016 23:33:28 +0200</pubDate>
+            <description>Strefa Cardio</description>
+            <media:description type="html">Strefa Cardio</media:description>
+            <media:thumbnail url="thumbs/album4.jpg" width="124" height="71"/>
+            <media:content type="image/jpeg" url="slides/album4.jpg" width="620" height="354"/>
+            <guid isPermaLink="false">slides/album4.jpg</guid>
+        </item>
+        <item>
+            <title>album1</title>
+            <link>slides/album1.jpg</link>
+            <pubDate>Mon, 23 May 2016 23:33:28 +0200</pubDate>
+            <description>Widok z góry</description>
+            <media:description type="html">Widok z góry</media:description>
+            <media:thumbnail url="thumbs/album1.jpg" width="124" height="71"/>
+            <media:content type="image/jpeg" url="slides/album1.jpg" width="780" height="446"/>
+            <guid isPermaLink="false">slides/album1.jpg</guid>
+        </item>
+    </channel>
+</rss>

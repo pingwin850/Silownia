@@ -54,6 +54,11 @@ namespace Silownia
             Gym_memberCommand.ExecuteNonQuery();
             Gym_memberConn.Close();
             GridViewGym_member.DataBind();
+
+            TextBoxName.Text = "";
+            TextBoxSurname.Text = "";
+            TextBoxEmail.Text = "";
+            TextBoxPhone.Text = "";
         }
 
         protected void ButtonRefresh_Click(object sender, EventArgs e)

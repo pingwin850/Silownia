@@ -85,14 +85,16 @@
                 <td class="auto-style8">&nbsp;</td>
                 <td class="auto-style10"><strong>
     
-        <asp:Label ID="LabelWelcome" runat="server" Text="Witaj " CssClass="auto-style9"></asp:Label>
+        <asp:Label ID="LabelWelcome" runat="server" Text="Witaj " CssClass="auto-style9" ForeColor="#3333FF"></asp:Label>
+                    <br />
+                    <br />
                     </strong>
+    
+        <asp:Button ID="B_logout" runat="server" OnClick="B_logout_Click" Text="Wyloguj" CssClass="auto-style16" BackColor="#FFFFCC" />
     
                 </td>
                 <td class="auto-style20">
-        <asp:Button ID="B_logout" runat="server" OnClick="B_logout_Click" Text="Wyloguj" CssClass="auto-style16" />
-    
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style19">
                     &nbsp;</td>
             </tr>

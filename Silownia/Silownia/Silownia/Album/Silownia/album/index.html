@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 8]><html lang="pl" class="no-js ie7 oldie"><![endif]-->
+<!--[if IE 8]><html lang="pl" class="no-js ie8 oldie"><![endif]-->
+<!--[if IE 9]><html lang="pl" class="no-js ie9"><![endif]-->
+<!--[if gt IE 9]><!--> <html lang="pl" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta name="viewport" content="initial-scale=1.0">
+		<meta property="og:title" content="Silownia"/>
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Silownia</title>
+		<meta name="keywords" content=""> 
+		<title>Silownia</title>
+		<link rel="stylesheet" href="res/common.css?v=1.7.2">
+		<script src="res/modernizr-2.6.2.min.js"></script>
+		<script src="res/ios-orientationchange-fix.js"></script>
+		
+		<!--[if lt IE 9]>
+   
+		   <style type="text/css">
+		
+		   #exifInfo, #exifCollapse { 
+		       background:transparent;
+		       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BD000000,endColorstr=#BD000000); 
+		       zoom: 1;
+		    } 
+		
+		    </style>
+		
+		<![endif]-->
+	<link rel="alternate" href="album.rss" type="application/rss+xml">
+</head>
+	<body>
+		
+		
+		<div id="carousel" class="carousel full-page">
+			<div id="pictures"></div>
+		</div>
+
+		
+		<div id="thumbnailCollapse" class="left-bottom">
+			<div id="thumbIcons">
+				<div class="showThumbs"></div>
+				<div class="showThumbs"></div>
+				<div class="showThumbs"></div>
+			</div>
+		</div>
+		
+		<div class="thumbs left-bottom">
+			<div class="thumbs-nav">
+				<div id="prevThumbs" class="icon-prev hidden"></div>
+				<div id="nextThumbs" class="icon-next hidden"></div>
+			</div>
+			<div id="thumbs" style="left: 0px">
+				<img src="thumbs/album2.jpg" data-href="slides/album2.jpg" alt="Strefa wolnych ciężarów" data-meta="originalDate:<b> 27.09.07 15:19</b><br> Model:<b> DiMAGE Z20</b><br> focalLength35mm:<b> 36.0mm</b><br> meteringMode:<b> Multi-segment</b><br> isoEquivalent:<b> 160</b><br> exposureTime:<b> 1/15s</b><br> aperture:<b> 3.2</b><br> Exposure Bias Value:<b> 0 EV</b><br> Exposure Program:<b> Program normal</b><br> White Balance:<b> Auto white balance</b><br> flash:<b> noFlash</b><br> resolution:<b> 2560 x 1920</b><br>"><img src="thumbs/album3.jpg" data-href="slides/album3.jpg" alt="Strefa fight" data-meta=""><img src="thumbs/album4.jpg" data-href="slides/album4.jpg" alt="Strefa Cardio" data-meta=""><img src="thumbs/album1.jpg" data-href="slides/album1.jpg" alt="Widok z góry" data-meta="">
+			</div>
+		</div>
+
+		<div id="navigation" class="right-top">
+			<nav>
+				<a id="prev" class="icon-prev" title="Previous Image">&nbsp;</a>
+				<a id="next" class="icon-next" title="Next Image">&nbsp;</a>
+			</nav>
+			
+			<div id="fullscreen">
+	
+				<div id="fullscreenLogo" title="Go Fullscreen">
+				</div>
+	
+			</div>
+			<div id="slideshow">
+	
+				<div id="slideshowIcon" >
+				</div>
+	
+			</div>
+		</div>
+
+		<div id="imageInfo" class="right-bottom">
+			
+				<h2 id="imageCount"></h2>
+			
+			<h4 id="imageName">&nbsp;</h4>
+		</div>
+		
+			<div id="exifInfo" class='collapsed'>
+			</div>
+	
+			<div id="exifCollapse">
+				<div id="exifCamera"></div>
+			</div>
+		
+		
+		<div id="sidebar" class="left-top">
+			<div id="folders">
+				<h2>
+						<a href="./index.html" class="folderTitle">Home</a>
+						<a href="http://localhost:30699/Login.aspx">Powrót</a> 
+				</h2>
+				
+			</div>
+		</div>
+		
+		<div id="links" class="left-bottom">		
+			<div class="sharing">
+			</div>
+		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="res/jquery-1.10.2.min.js"><\/script>');</script>
+		<script src="res/jquery-migrate-1.2.1.min.js"></script>
+		<script src="res/main.js"></script>
+		<script src="res/jquery.touchSwipe.min.js"></script>		
+		<script>
+		
+			// Fully version: 1.7.2
+
+			if( $("html").hasClass("ie8") || $("html").hasClass("ie7") ) {
+
+			 	document.open();
+
+			 	document.body.innerHTML = '';
+
+				var html = '<ht'+'ml><he'+'ad><sty'+'le type="text/css">body { padding:3em 2em; } body,a { text-align:center; color: white; background-color: black; } </st'+'yle></he'+'ad>'; 
+
+				html += '<bo'+'dy><h1>Sorry!</h1>'; 
+				
+				html += '<p>This fancy album needs modern features in your web browser - it will not work with this one.</p>'; 
+				
+				html += '<p>Just use anything newer than Internet Explorer 8, like '; 
+				
+				html += '<a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>, '; 
+				
+				html += '<a href="http://www.google.com/chrome" target="_blank">Chrome</a> or '; 
+				
+				html += '<a href="http://www.opera.com" target="_blank">Opera</a>.'; 
+				
+				html += '<p>Thanks!</p>' 
+				
+				html += '</b'+'ody></h'+'tml>'; 
+				
+				document.write(html); 
+
+			 	document.close();
+			 	
+ 			}
+
+ 			else {
+				
+				$(window).load(function(){
+					initSkin({
+						animationInterval: 1000,
+						amountImages: 4,
+						wrapAround: true,
+						fontSize: 13,
+						showPhotoDataFromStart: false,
+						slideshowInterval: 3,
+						opacity: 30,
+						facebook: false,
+						twitter: false,
+						google: false,
+						tumblr: false,
+						reddit: false,
+						pinterest: false,
+						email: false,
+						allowDownload: false
+					});
+				});
+
+			}
+
+		</script>
+	<div id="jalbumwidgetcontainer"></div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+_jaSkin = "Fully";
+_jaStyle = "Roboto.css";
+_jaVersion = "13.2";
+_jaGeneratorType = "desktop";
+_jaLanguage = "pl";
+_jaPageType = "index";
+_jaRootPath = ".";
+_jaGuid = "1464038681626";
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "http"+("https:"==document.location.protocol?"s":"")+"://jalbum.net/widgetapi/load.js";
+document.getElementById("jalbumwidgetcontainer").appendChild(script);
+//--><!]]></script>
+
+</body>
+</html>
+

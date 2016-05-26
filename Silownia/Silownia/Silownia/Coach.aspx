@@ -97,12 +97,12 @@
         }
         .auto-style24 {
             height: 23px;
-            width: 227px;
+            width: 190px;
         }
         .auto-style25 {
             height: 23px;
             text-align: right;
-            width: 227px;
+            width: 190px;
         }
         .auto-style26 {
             height: 23px;
@@ -126,15 +126,17 @@
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style6"><strong>
     
-        <asp:Label ID="LabelWelcome" runat="server" Text="Witaj " CssClass="auto-style2"></asp:Label>
+        <asp:Label ID="LabelWelcome" runat="server" Text="Witaj " CssClass="auto-style2" ForeColor="#3333FF"></asp:Label>
+                    <br />
+                    <br />
+        <asp:Button ID="B_logout" runat="server" OnClick="B_logout_Click" Text="Wyloguj" CssClass="auto-style3" BackColor="#FFFFCC" />
+    
                     </strong>
                     <br />
     
                 </td>
                 <td>
-        <asp:Button ID="B_logout" runat="server" OnClick="B_logout_Click" Text="Wyloguj" CssClass="auto-style3" />
-    
-                </td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
@@ -185,7 +187,7 @@
             <tr>
                 <td class="auto-style5"><strong>podaj datę i godzinę zajęć:</strong></td>
                 <td class="auto-style8">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="186px" placeholder="MM/dd/yyyy HH:mm:ss"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="186px" autocomplete="off" placeholder="MM/dd/yyyy HH:mm:ss"></asp:TextBox>
                 </td>
                 <td class="auto-style20"></td>
                 <td class="auto-style25"><strong>Wybierz datę i godzinę:</strong></td>

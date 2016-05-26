@@ -64,11 +64,17 @@ namespace Silownia
                 string typ = DropDownListWorkoutType.Text;
                 string desc = TextBox2.Text;
                 string status = "Aktywny";
+                string uczestnicy = "";
 
                 SqlConnection WorkoutAddConn = new SqlConnection(ConfigurationManager.ConnectionStrings["LoginConnectionString"].ConnectionString);
                 WorkoutAddConn.Open();
-                string WorkoutAddStatement = "insert into Workout values('" + d + "','" + typ + "','" + desc + "','" + status + "') ";
+                string WorkoutAddStatement = "insert into Workout values(@Data, @Typ, @Opis, @Status, @Uczestnicy)";
                 SqlCommand WorkoutAddCommand = new SqlCommand(WorkoutAddStatement, WorkoutAddConn);
+                WorkoutAddCommand.Parameters.AddWithValue("@Data", d);
+                WorkoutAddCommand.Parameters.AddWithValue("@Typ", typ);
+                WorkoutAddCommand.Parameters.AddWithValue("@Opis", desc);
+                WorkoutAddCommand.Parameters.AddWithValue("@Status", status);
+                WorkoutAddCommand.Parameters.AddWithValue("@Uczestnicy", uczestnicy);
 
                 int x = WorkoutAddCommand.ExecuteNonQuery();
                 if (x == 0)
@@ -142,6 +148,7 @@ namespace Silownia
                 case "0":
                     ButtonAddWorkout.Enabled = false;
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertMessage", "alert('Wybierz typ zajęć !!!');", true);
+                    TextBox2.Text = "";
                     break;
 
                 case "Judo":
@@ -203,6 +210,13 @@ namespace Silownia
                     ButtonAddWorkout.Enabled = true;
                     string joga = "Joga to w dosłownym tłumaczeniu jedność ciała, umysłu i jaźni. Redukuje stres, wycisza i zapewnia stabilność emocjonalną, wspomagając przy tym regulację procesów trawiennych, hormonalnych i oddechowych. Joga to elastyczne, mocne, sprężyste i przede wszystkim zdrowe ciało!";
                     TextBox2.Text = joga;
+                    TextBox2.DataBind();
+                    break;
+
+                case "Step":
+                    ButtonAddWorkout.Enabled = true;
+                    string step = "Dynamiczne zajęcia polegające na wchodzeniu na specjalną platformę – Step, przeznaczone dla osób zaawansowanych.";
+                    TextBox2.Text = step;
                     TextBox2.DataBind();
                     break;
 
@@ -283,6 +297,7 @@ namespace Silownia
                 Gym_member_ExercisesCommand.ExecuteNonQuery();
                 Gym_member_ExercisesConn.Close();
                 GridView1.DataBind();
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertMessage", "alert('Zestaw ćwiczeń został przypisany !!!');", true);
             }
             else
             {

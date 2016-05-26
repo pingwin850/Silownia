@@ -26,7 +26,7 @@
         }
         .auto-style6 {
             height: 23px;
-            width: 245px;
+            width: 256px;
             text-align: right;
             background-color: #FFFFFF;
         }
@@ -42,14 +42,14 @@
             width: 832px;
         }
         .auto-style12 {
-            width: 245px;
+            width: 256px;
             text-align: right;
         }
         .auto-style13 {
             width: 206px;
         }
         .auto-style14 {
-            width: 245px;
+            width: 256px;
             text-align: right;
             height: 25px;
         }
@@ -64,21 +64,21 @@
             width: 240px;
         }
         .auto-style20 {
-            width: 245px;
+            width: 256px;
         }
         .auto-style21 {
-            width: 245px;
+            width: 256px;
             height: 23px;
         }
         .auto-style22 {
             width: 602px;
             height: 23px;
         }
-        .auto-style23 {
-            width: 246px;
-        }
         .auto-style24 {
             width: 272px;
+        }
+        .auto-style25 {
+            width: 259px;
         }
     </style>
 </head>
@@ -88,15 +88,20 @@
     
         <table class="auto-style1">
             <tr>
-                <td class="auto-style23">&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style11">
     
-        <asp:Label ID="LabelWelcome" runat="server" Text="Witaj " CssClass="auto-style3"></asp:Label>
-                </td>
-                <td class="auto-style2">
-        <asp:Button ID="B_logout" runat="server" OnClick="B_logout_Click" Text="Wyloguj" CssClass="auto-style4" />
+                    <strong>
+    
+        <asp:Label ID="LabelWelcome" runat="server" Text="Witaj " CssClass="auto-style3" ForeColor="#3333FF"></asp:Label>
+                    </strong>
+                    <br />
+                    <br />
+        <asp:Button ID="B_logout" runat="server" OnClick="B_logout_Click" Text="Wyloguj" CssClass="auto-style4" BackColor="#FFFFCC" />
     
                 </td>
+                <td class="auto-style2">
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
@@ -196,7 +201,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style12">S<strong>prawdź ćwiczenie:</strong></td>
+                <td class="auto-style12"><strong>Sprawdź ćwiczenie:</strong></td>
                 <td class="auto-style9">
                     <asp:TextBox ID="TextBoxCheck" runat="server" autocomplete="off"></asp:TextBox>
                     <asp:Button ID="ButtonCheck" runat="server" Text="Sprawdź" />
@@ -267,7 +272,7 @@
             <tr>
                 <td class="auto-style20">&nbsp;</td>
                 <td class="auto-style9">
-                    <asp:GridView ID="DataGrid1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+                    <asp:GridView ID="DataGrid1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateSelectButton="True" OnSelectedIndexChanged="DataGrid1_SelectedIndexChanged">
                         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <EditRowStyle BackColor="#999999" />
                         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -293,14 +298,60 @@
             <tr>
                 <td class="auto-style12"><strong>Zapisz się
                     na zajęcia grupowe:</strong></td>
-                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style9">
+                    <asp:Label ID="LabelEnrolFor" runat="server"></asp:Label>
+                &nbsp;<asp:Button ID="ButtonEnrolFor" runat="server" OnClick="ButtonEnrolFor_Click" Text="Zapisz się" Width="92px" />
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style12">&nbsp;</td>
-                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style9">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style9">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style12"><strong>generuj raport:</strong></td>
+                <td class="auto-style9">
+                    &nbsp;<asp:Button ID="ButtonPDF" runat="server" OnClick="ButtonPDF_Click" Text="PDF" Width="92px" />
+                </td>
+                <td>
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style9">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style9">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style9">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>

@@ -61,6 +61,11 @@ namespace Silownia
                     CoachCommand.ExecuteNonQuery();
                     CoachConn.Close();
                     GridViewCoach.DataBind();
+
+                    TextBoxName.Text = "";
+                    TextBoxSurname.Text = "";
+                    TextBoxEmail.Text = "";
+                    TextBoxPhone.Text = "";
                     break;
 
                 case "Dietician":
@@ -81,6 +86,11 @@ namespace Silownia
                     DieticianCommand.ExecuteNonQuery();
                     DieticianConn.Close();
                     GridViewDietician.DataBind();
+
+                    TextBoxName.Text = "";
+                    TextBoxSurname.Text = "";
+                    TextBoxEmail.Text = "";
+                    TextBoxPhone.Text = "";
                     break;
 
                 case "Receptionist":
@@ -101,17 +111,13 @@ namespace Silownia
                     ReceptionistCommand.ExecuteNonQuery();
                     ReceptionistConn.Close();
                     GridViewReceptionist.DataBind();
+
+                    TextBoxName.Text = "";
+                    TextBoxSurname.Text = "";
+                    TextBoxEmail.Text = "";
+                    TextBoxPhone.Text = "";
                     break;
             }
-        }
-
-        protected void GridViewCoach_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void GridViewCoach_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
         }
 
         protected void ButtonCoachRefresh_Click(object sender, EventArgs e)
